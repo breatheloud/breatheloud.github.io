@@ -3,21 +3,21 @@ nav {
 }
 
 #Home {
-  background-image: url("https://images.unsplash.com/photo-1465232377925-cce9a9d87843?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=c22039e263553d4726f7c32656e792ed");
+  background-image: url("/Images/Portfolio Home Picture-min.jpeg");
   background-size: cover ;
   background-position: center center;
   height: 100vh;
 }
 
 #Home .text-center {
-  font-size: 5em; 
+  font-size: 5em;
   color: #6a8fad;
   font-family: "Permanent Marker", cursive;
   margin-bottom: 1vh;
 }
 
 #About {
-background-image: url("https://hd.unsplash.com/photo-1467321638755-7246fd0dc1f3");
+background-image: url("/Images/Portfolio About Page-min.jpeg");
   background-size: cover ;
   background-position: center center;
   height: 100vh;
@@ -32,7 +32,7 @@ background-image: url("https://hd.unsplash.com/photo-1467321638755-7246fd0dc1f3"
 }
 
 #Portfolio {
-  background-image: url("https://images.unsplash.com/photo-1468476775582-6bede20f356f");
+  background-image: url("/Images/Portfolio Page-min.jpeg");
   background-size: cover;
   background-position: center center;
   height: 100vh;
@@ -52,7 +52,7 @@ background-image: url("https://hd.unsplash.com/photo-1467321638755-7246fd0dc1f3"
 }
 
 #Contact {
-  background-image: url("https://images.unsplash.com/photo-1464695110811-dcf3903dc2f4?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=34cc42f969e2f39d7a8af95d16c7dcca");
+  background-image: url("/Images/Portfolio Contact Page-min.jpeg");
   background-size: cover;
   background-position: center center;
   height: 100vh;
