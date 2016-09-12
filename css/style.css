@@ -1,0 +1,74 @@
+nav {
+  opacity: .6;
+}
+
+#Home {
+  background-image: url("https://images.unsplash.com/photo-1465232377925-cce9a9d87843?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=c22039e263553d4726f7c32656e792ed");
+  background-size: cover ;
+  background-position: center center;
+  height: 100vh;
+}
+
+#Home .text-center {
+  font-size: 5em; 
+  color: #6a8fad;
+  font-family: "Permanent Marker", cursive;
+  margin-bottom: 1vh;
+}
+
+#About {
+background-image: url("https://hd.unsplash.com/photo-1467321638755-7246fd0dc1f3");
+  background-size: cover ;
+  background-position: center center;
+  height: 100vh;
+  display: flex;
+}
+
+#About article {
+  font-size: 2.9em;
+  color: #000000;
+  margin-top: 60vh;
+  font-family: 'Amatic SC', cursive;
+}
+
+#Portfolio {
+  background-image: url("https://images.unsplash.com/photo-1468476775582-6bede20f356f");
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+
+}
+
+#Portfolio h2 {
+  padding-top: 50px;
+  font-size: 1.8em;
+  color:#000000;
+
+}
+
+#Portfolio img {
+  max-height: 40vh;
+  margin-bottom: 5vh;
+}
+
+#Contact {
+  background-image: url("https://images.unsplash.com/photo-1464695110811-dcf3903dc2f4?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=34cc42f969e2f39d7a8af95d16c7dcca");
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+}
+
+.vertical-align {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#Contact div {
+  padding-top: 15vh;
+}
+
+#Contact .btn {
+  margin:2vh;
+}
