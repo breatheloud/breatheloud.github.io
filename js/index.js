@@ -8,13 +8,9 @@ $(function() {
       if (target.length) {
         $('html,body').animate({
           scrollTop: target.offset().top
-        }, 620); // The number here represents the speed of the scroll in milliseconds
+        }, 620); // Scroll Speed
         return false;
       }
     }
   });
 });
-
-// Change the speed to whatever you want
-// Personally i think 1000 is too much
-// Try 800 or below, it seems not too much but it will make a difference

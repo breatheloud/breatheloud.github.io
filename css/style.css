@@ -2,6 +2,10 @@ nav {
   opacity: .6;
 }
 
+.navbar button {
+  margin-left: 1.5vw;
+}
+
 #Home {
   background-image:url("https://raw.githubusercontent.com/breatheloud/breatheloud.github.io/master/Images/Portfolio%20Home%20Picture-min.jpeg");
   background-size: cover ;
@@ -10,9 +14,10 @@ nav {
 }
 
 #Home h1 {
-  font-size: 4em;
+  font-size: 4.5em;
   color: #6a8fad;
   font-family: "Permanent Marker", cursive;
+  font-weight:  100;
   margin-bottom: 1vh;
 }
 
@@ -27,7 +32,7 @@ background-image: url("https://breatheloud.github.io/Images/Portfolio%20About%20
 #About article {
   font-size: 2.4em;
   color: #000000;
-  margin-top: 60vh;
+  margin-top: 40vh;
   font-family: 'Amatic SC', cursive;
 }
 
@@ -70,9 +75,11 @@ background-image: url("https://breatheloud.github.io/Images/Portfolio%20About%20
 }
 
 #Contact div {
-  padding-top: 15vh;
+  padding-top: 13vh;
 }
 
 #Contact .btn {
-  margin:2vh;
+  margin: 3.5vw;
+  font-size: 1.25em;
+  text-align: inherit;
 }
