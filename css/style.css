@@ -3,7 +3,7 @@ nav {
 }
 
 #Home {
-  background-image:"https://breatheloud.github.io/Images/Portfolio%20Home%20Picture-min.jpeg");
+  background-image:url("https://raw.githubusercontent.com/breatheloud/breatheloud.github.io/master/Images/Portfolio%20Home%20Picture-min.jpeg");
   background-size: cover ;
   background-position: center center;
   height: 100vh;
