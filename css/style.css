@@ -44,7 +44,7 @@ background-image: url("https://breatheloud.github.io/Images/Portfolio%20About%20
   background-image: url("https://breatheloud.github.io/Images/Portfolio%20Page-min.jpeg");
   background-size: cover;
   background-position: center center;
-  height: 100vh;
+  min-height: 100vh;
 
 }
 
@@ -57,11 +57,12 @@ background-image: url("https://breatheloud.github.io/Images/Portfolio%20About%20
 
 #Portfolio img {
   max-width: 25vw;
-  margin-bottom: 5vh;
 }
 
 #Portfolio figcaption {
   font-size: 1.2em;
+  padding-bottom: 5vh;
+  padding-top: 2vh;
 }
 
 #Contact {
