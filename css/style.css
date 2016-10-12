@@ -8,51 +8,38 @@ nav {
 }
 
 #Home {
-  background-image:url("https://raw.githubusercontent.com/breatheloud/breatheloud.github.io/master/Images/Portfolio%20Home%20Picture-min.jpeg");
+  background: white; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(white, #B2D8E8); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(white, #B2D8E8); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(white, #B2D8E8); /* For Firefox 3.6 to 15 */
+background: linear-gradient(white, #B2D8E8); /* Standard syntax */
   background-size: cover ;
-  background-position: center center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 #Home h1 {
-  font-size: 4.5em;
-  color: #6a8fad;
-  font-family: "Permanent Marker", cursive;
-  font-weight:  100;
-  margin-bottom: 1vh;
-  -webkit-animation-iteration-count: 2;
-  -webkit-animation-delay: 1.2s;
-  -webkit-animation-duration: 5s;
-}
-
-#About {
-background-image: url("https://breatheloud.github.io/Images/Portfolio%20About%20Page-min.jpeg");
-  background-size: cover ;
-  background-position: center center;
-  height: 100vh;
-  display: flex;
-}
-
-#About article {
-  font-size: 3em;
-  color: #000000;
-  margin-top: 40vh;
-  font-family: 'Amatic SC', cursive;
+  font-size: 5.5em;
+  color: #7f4f3d;
+  font-family: 'Bilbo Swash Caps', cursive;
+  font-weight: 600;
+  padding-top: 15vh;
 }
 
 #Portfolio {
-  background-image: url("https://breatheloud.github.io/Images/Portfolio%20Page-min.jpeg");
+  background: white; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#B2D8E8,#479ACF); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#B2D8E8, #479ACF); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#B2D8E8, #479ACF); /* For Firefox 3.6 to 15 */
+background: linear-gradient(#B2D8E8, #479ACF); /* Standard syntax */
   background-size: cover;
-  background-position: center center;
   min-height: 100vh;
-
 }
 
 #Portfolio h2 {
   padding: 50px;
-  font-size: 2.8em;
-  color:#000000;
-
+  font-size: 3.6em;
+  color:#3a2f2a;
+  font-family: 'Amatic SC', cursive;
 }
 
 #Portfolio img {
@@ -63,13 +50,18 @@ background-image: url("https://breatheloud.github.io/Images/Portfolio%20About%20
   font-size: 1.2em;
   padding-bottom: 5vh;
   padding-top: 2vh;
+  color: #ffffff;
+  opacity: 0;
 }
 
 #Contact {
-  background-image: url("https://breatheloud.github.io/Images/Portfolio%20Contact%20Page-min.jpeg");
+  background: white; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#479ACF, white); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#479ACF, white); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#479ACF, white); /* For Firefox 3.6 to 15 */
+background: linear-gradient(#479ACF, white); /* Standard syntax */
   background-size: cover;
-  background-position: center center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .vertical-align {

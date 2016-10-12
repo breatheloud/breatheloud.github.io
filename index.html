@@ -4,18 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Kimon's Portfolio</title>
-    <link href='https://fonts.googleapis.com/css?family=Permanent+Marker|Amatic+SC' rel='stylesheet' type='text/css'>
 
-<script type="text/javascript" src="script.js"></script>
-
-<script src="https://use.fontawesome.com/9b7f52debd.js"></script>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Bilbo+Swash+Caps" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
-<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css'>
 
-        <link rel="stylesheet" href="css/style.css">
+    <script src="https://use.fontawesome.com/9b7f52debd.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/plugins/CSSPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/easing/EasePack.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenLite.min.js"></script>
 
   </head>
 
@@ -25,64 +23,57 @@
      <nav class="navbar navbar-default navbar-fixed-top">
 
          <div class="navbar-header pull-left">
-           <a class="navbar-brand smoothScroll" href="#Home"><span class="glyphicon glyphicon-home"></span></a>
+           <a class="navbar-brand" href="#Home"><span class="glyphicon glyphicon-home"></span></a>
        </div> <!-- .navbar-header -->
-           <div class="navbar-header pull-left">
-             <a href="#About" class="smoothScroll"><button type="button" class="btn btn-default navbar-btn">About</button></a>
-             <a href="#Portfolio" class="smoothScroll"><button type="button" class="btn btn-default navbar-btn">Portfolio</button></a>
-             <a href="#Contact" class="smoothScroll"><button type="button" class="btn btn-default navbar-btn">Contact</button></a>
+           <div class="navbar-header pull-right">
+
+             <a href="#Portfolio"><button type="button" class="btn btn-default navbar-btn">Portfolio</button></a>
+             <a href="#Contact"><button type="button" class="btn btn-default navbar-btn">Contact</button></a>
 
        </div> <!-- .navbar-header -->
      </nav>
 
  <!-- end of navbar -->
 
-  <div id="Home" class="vertical-align">
+  <div id="Home">
     <div class="container-fluid">
-      <h1 class="text-center animated pulse">Breathe</h1>
+      <h1 class="text-center">Breathe</h1>
     </div>
     <!-- .container-fluid  -->
   </div>
   <!-- #Home -->
-  <div id="About">
-    <div class="container">
-      <row class="col-md-6 col-sm-8 col-xs-10">
-        <article>Hello<br></br>I aspire to make beautiful webpages</article>
-      </row>
-    </div> <!-- .container-fluid -->
-  </div> <!-- #About -->
 
   <div id="Portfolio">
     <div class="container-fluid">
-      <div class = "col-xs-12 text-center">
-        <h2>Portfolio</h2>
+      <div class = "col-xs-12">
+        <h2>Projects</h2>
       </div>
 
       <!-- Wikipedia Viewer -->
       <div class = "col-xs-12 col-sm-6 col-md-4">
           <figure class="figure">
             <a href="https://codepen.io/Kimon/full/WGpkdK" alt="Wikipedia Viewer" target="blank">
-              <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/1122px-Wikipedia-logo-v2.svg.png" class="figure-img img-fluid img-rounded center-block" alt="Wikipedia Viewer">
+              <img id="wikiPic" src="https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/1122px-Wikipedia-logo-v2.svg.png" class="figure-img img-fluid img-rounded center-block" alt="Wikipedia Viewer">
             </a>
-            <figcaption class="figure-caption text-center">Wikipedia Search Applet</figcaption>
+            <figcaption id="wikiCaption" class="figure-caption text-center">Wikipedia Search Applet</figcaption>
           </figure>
       </div>
       <!-- Weather App -->
       <div class="col-xs-12 col-sm-6 col-md-4">
         <figure class="figure">
           <a href="https://codepen.io/Kimon/full/zKAjaw/" alt="A Geo-Location Weather Mini Web Application" target="blank">
-            <img src="https://cdn3.iconfinder.com/data/icons/weather-and-forecast/51/Weather_icons_grey-03-512.png" class="figure-img img-fluid img-rounded center-block" alt="Go to the Weather App"/>
+            <img id="weatherPic" src="https://cdn3.iconfinder.com/data/icons/weather-and-forecast/51/Weather_icons_grey-03-512.png" class="figure-img img-fluid img-rounded center-block" alt="Go to the Weather App"/>
           </a>
-          <figcaption class="figure-caption text-center">Local Weather</figcaption>
+          <figcaption id="weatherCaption" class="figure-caption text-center">Local Weather</figcaption>
         </figure>
       </div>
       <!-- Quote Generator -->
       <div class="col-xs-12 col-sm-6 col-md-4">
         <figure class="figure">
           <a href="https://codepen.io/Kimon/full/bZXyKP/" alt="Chuck Norris Joke Generator" target="blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Chuck_Norris.jpg" class="figure-img img-fluid img-rounded center-block">
+            <img id="quotePic" src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Chuck_Norris.jpg" class="figure-img img-fluid img-rounded center-block">
           </a>
-          <figcaption class="figure-caption text-center">Random Joke Generator</figcaption>
+          <figcaption id="quoteCaption" class="figure-caption text-center">Random Joke Generator</figcaption>
         </figure>
       </div>
 
@@ -106,5 +97,8 @@
     <!-- .container-fluid -->
   </div>
   <!-- #Contact -->
+
+<script src="js/script.js"></script> <!-- at the end to be async -->
+
 </body>
 </html>
