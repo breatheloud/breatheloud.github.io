@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="svg2"
+   viewBox="0 0 1063.3413 596.75128"
+   height="168.41647mm"
+   width="300.09848mm"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="Plane Icon.svg">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="816"
+     inkscape:window-height="636"
+     id="namedview7"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="0.22425739"
+     inkscape:cx="428.21037"
+     inkscape:cy="-85.15156"
+     inkscape:window-x="26"
+     inkscape:window-y="101"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg2" />
+  <defs
+     id="defs4" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     transform="translate(147.57597,-258.98032)">
+    <path
+       id="path4136"
+       d="M 16.779865,622.12967 712.67352,261.8354 582.51166,839.02909 429.82897,779.23024 l -88.85588,74.92627 -28.7096,-2.69817 6.83273,-112.94821 237.88827,-330.06264 -366.74442,274.73423 z"
+       style="fill:#aaaaaa;fill-opacity:1;fill-rule:evenodd;stroke:#aaaaaf;stroke-width:3.04406619px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.94117647"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>

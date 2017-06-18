@@ -1,104 +1,86 @@
 <!DOCTYPE html>
-<html >
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Kimon's Portfolio</title>
+  <html>
 
-    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Bilbo+Swash+Caps" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+    <head>
 
-    <script src="https://use.fontawesome.com/9b7f52debd.js"></script>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/plugins/CSSPlugin.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/easing/EasePack.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenLite.min.js"></script>
+      <title>Kimon's Portfolio</title>
 
-  </head>
+      <link rel="stylesheet" href="style.css">
 
-  <body>
+      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    </head>
 
     <body>
-     <nav class="navbar navbar-default navbar-fixed-top">
 
-         <div class="navbar-header pull-left">
-           <a class="navbar-brand" href="#Home"><span class="glyphicon glyphicon-home"></span></a>
-       </div> <!-- .navbar-header -->
-           <div class="navbar-header pull-right">
+      <h1>my portfolio</h1>
 
-             <a href="#Portfolio"><button type="button" class="btn btn-default navbar-btn">Portfolio</button></a>
-             <a href="#Contact"><button type="button" class="btn btn-default navbar-btn">Contact</button></a>
+      <div class = "intro">
 
-       </div> <!-- .navbar-header -->
-     </nav>
+        <img src = "../Images/Beerhouse Pic.jpg" alt="A photo of me" id="avatar" class="animated" title="That's me, Kimon">
 
- <!-- end of navbar -->
+        <div id = "introBlurb">
+          <p id = "sneakyLine" title="A simple haiku" alt="Introductory haiku">mere simplicity</br>catharsis in this manic</br><em>jumblewombletum</em></p>
+        </div>
 
-  <div id="Home">
-    <div class="container-fluid">
-      <h1 class="text-center">Breathe</h1>
-    </div>
-    <!-- .container-fluid  -->
-  </div>
-  <!-- #Home -->
+      </div> <!-- .intro -->
 
-  <div id="Portfolio">
-    <div class="container-fluid">
-      <div class = "col-xs-12">
-        <h2>Projects</h2>
-      </div>
+      <h2>API calls feat. jQuery</h2>
 
-      <!-- Wikipedia Viewer -->
-      <div class = "col-xs-12 col-sm-6 col-md-4">
-          <figure class="figure">
-            <a href="https://codepen.io/Kimon/full/WGpkdK" alt="Wikipedia Viewer" target="blank">
-              <img id="wikiPic" src="https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/1122px-Wikipedia-logo-v2.svg.png" class="figure-img img-fluid img-rounded center-block" alt="Wikipedia Viewer">
+      <div class = "projects">
+        <!-- Put hrefs and change alt tags appropriately. Also must include 'by Mateo Zlatar from the Noun Project' for the weather icon -->
+          <figure>
+            <a href = "https://codepen.io/Kimon/full/WGpkdK/" title="Go to my Wikipedia page viewer" target = "blank" alt="Wikipedia's Logo">
+              <img src = "https://upload.wikimedia.org/wikipedia/commons/8/80/Wikipedia-logo-v2.svg" alt = "The Wikipedia logo: a sphere made up of puzzle pieces with different languages' characters on it">
             </a>
-            <figcaption id="wikiCaption" class="figure-caption text-center">Wikipedia Search Applet</figcaption>
+            <figcaption>Search Tool</figcaption>
           </figure>
-      </div>
-      <!-- Weather App -->
-      <div class="col-xs-12 col-sm-6 col-md-4">
-        <figure class="figure">
-          <a href="https://codepen.io/Kimon/full/zKAjaw/" alt="A Geo-Location Weather Mini Web Application" target="blank">
-            <img id="weatherPic" src="https://cdn3.iconfinder.com/data/icons/weather-and-forecast/51/Weather_icons_grey-03-512.png" class="figure-img img-fluid img-rounded center-block" alt="Go to the Weather App"/>
-          </a>
-          <figcaption id="weatherCaption" class="figure-caption text-center">Local Weather</figcaption>
-        </figure>
-      </div>
-      <!-- Quote Generator -->
-      <div class="col-xs-12 col-sm-6 col-md-4">
-        <figure class="figure">
-          <a href="https://codepen.io/Kimon/full/bZXyKP/" alt="Chuck Norris Joke Generator" target="blank">
-            <img id="quotePic" src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Chuck_Norris.jpg" class="figure-img img-fluid img-rounded center-block">
-          </a>
-          <figcaption id="quoteCaption" class="figure-caption text-center">Random Joke Generator</figcaption>
-        </figure>
-      </div>
 
-    </div> <!-- .container> -->
-  </div> <!-- #Portfolio -->
+          <figure>
+            <a href = "https://codepen.io/Kimon/full/zKAjaw" title="Go to geolocation-based weather web app" target = "blank" alt = "An icon depicting the sun, rain clouds and snow all in one. By Mateo Zlatar from the Noun Project">
+              <img src = "../Images/Weather Icon.svg" alt = "Weather Icon">
+            </a>
+            <figcaption>Local Weather App</figcaption>
+          </figure>
 
-  <div id="Contact">
-    <div class="container-fluid">
-      <div class="vertical-align">
+          <figure>
+            <a href = "https://codepen.io/Kimon/full/bZXyKP/" title="Go to random Chuck Norris joke generator" alt="A cartoon simplistic animated rendition of, presumably, Chuck Norris" target = "blank">
+              <img src = "../Images/Chuck Norris Icon.png" alt = "Joke Generator">
+            </a>
+            <figcaption>Joke Generator</figcaption>
+          </figure>
 
-          <a class="btn btn-primary" href="https://twitter.com/asskim" alt="Go to my Twitter profile" target="_ blank"> <i class="fa fa-twitter" aria-hidden="true"> </i> Opinions
-          </a>
+          <figure>
+            <a href = "https://codepen.io/Kimon/full/xELqxg/" title="Go to my Twitch streamer list" target = "blank" alt="My twitch streamers list">
+              <img src = "../Images/Twitch Logo.svg" alt = "The Twitch Logo">
+            </a>
+            <figcaption>Twitch.tv streamer</figcaption>
+          </figure>
 
-          <a class="btn btn-success" href="https://www.instagram.com/kimonass" alt="Go to my Instagram page" target="_ blank"><i class="fa fa-instagram" aria-hidden="true"></i> Experiences</a>
+      </div> <!-- .projects -->
 
-          <a class="btn btn-default" href="https://github.com/breatheloud" alt="Go to my Github profile" target="_ blank"> <i class="fa fa-github" aria-hidden="true"> </i> Learnings</a>
+      <div class = "contact">
 
-      </div>
-      <!-- vertical-align -->
-    </div>
-    <!-- .container-fluid -->
-  </div>
-  <!-- #Contact -->
+        <a href = "mailto:kimona@protonmail.com" title="Send me an email" alt="Font Awesome Paper Plane Icon">
+          <img src="../Images/Plane Icon.svg" alt="Paper Plane Icon" width=47em height=47em>
+        </a>
 
-<script src="js/script.js"></script> <!-- at the end to be async -->
+        <a href = "https://github.com/breatheloud" title="See me on Github" target = "blank" alt="Font Awesome Github Icon">
+          <img src="../Images/Octocat icon.svg" alt="Octocat Icon" width=52em height=43em>
+        </a>
 
-</body>
-</html>
+        <a href = "https://twitter.com/kimosapien" title="See me on Twitter" target = "blank" alt="Font Awesome Twitter Icon">
+          <img src="../Images/Twitter logo.svg" alt="Twitter Logo" width=55em height=55em>
+        </a>
+
+      </div> <!-- .contact -->
+
+      <script src="script.js"></script>
+      <script src="https://use.fontawesome.com/0b4dd8a7e5.js"></script>
+
+    </body>
+
+  </html>
