@@ -1,8 +1,40 @@
-/* Need media queries */
+/* Responsiveness */
+
+  @media all and (max-width: 700px) and (min-width:401px){
+
+    .intro img {
+      min-width: 29.25vw;
+      min-height: 22.5vw;
+    }
+
+    h2 {
+      font-size: .9em;
+    }
+  }
+
+  @media all and (max-width:400px) {
+
+    .intro img {
+      min-width: 29.25vw;
+      min-height: 22.5vw;
+    }
+
+    h2 {
+      font-size: .8em;
+    }
+
+    figure figcaption {
+      font-size: 75%;
+    }
+  }
+
+
+/* End of responsive attributes */
 
 h1 {
   text-align : center ;
-  font-family : monospace;
+  font-family : sans-serif;
+  font-weight: 400;
 }
 
 h2 {
@@ -22,11 +54,12 @@ p {
 
 #sneakyLine {
   visibility: hidden;
+  font-family: serif;
 }
 
 .intro img {
-  max-width: 16.5vw;
-  max-height: 12.5vw;
+  max-width: 23.1vw;
+  max-height: 16.25vw;
 
   border-radius: 5%;
   border-style: solid;
@@ -47,11 +80,12 @@ p {
 
 .projects {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  align-items: space-around;
+  justify-content: space-between;
+  flex-wrap: wrap;
 
-  padding-top: 4vh;
-  padding-bottom: 10vh;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
 
   border-style:ridge;
   border-color: #f6f6f6;
@@ -71,6 +105,7 @@ p {
   display: flex;
   flex-direction: column;
   align-content: space-around;
+  justify-content: center;
 }
 
 figcaption {
