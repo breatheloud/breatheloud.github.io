@@ -28,8 +28,6 @@ function removeTransition(e) {
 
 profilePic.addEventListener("transitionend", removeTransition);
 
-// project image animation
-
 // figcaption reveal on hover or focus or tap
 
 var figures = document.getElementsByTagName('figure');
