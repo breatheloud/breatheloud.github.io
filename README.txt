@@ -1,1 +1,1 @@
-A Pen created at CodePen.io. You can find the original at http://codepen.io/Kimon/pen/zBGgaq.
+This is my portfolio to showcase anything of note that I have created.
