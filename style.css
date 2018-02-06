@@ -96,6 +96,8 @@ p {
 }
 
 .projects img {
+  display: flex;
+  align-items: center;
   height: 15vw;
   width: 15vw;
   opacity: .3;
