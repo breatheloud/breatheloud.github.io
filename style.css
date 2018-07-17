@@ -26,6 +26,10 @@
     figure figcaption {
       font-size: 75%;
     }
+
+    .projects figure {
+      display: flex;
+    }
   }
 
 
@@ -58,7 +62,7 @@ p {
 
 #sneakyLine {
   visibility: hidden;
-  font-family: serif;
+  font-family: sans-serif;
 }
 
 .intro img {
@@ -119,6 +123,7 @@ figcaption {
   font-size: .9em;
   text-align: center;
   opacity: .6;
+  margin-top: .2em;
 }
 
 .contact {
