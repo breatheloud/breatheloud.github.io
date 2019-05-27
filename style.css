@@ -66,6 +66,7 @@ p {
 .projects img {
   width: 33.33vw;
   height: 100%;
+  margin-bottom: -4px;
 }
 
 .projects img:hover {
@@ -235,6 +236,30 @@ h3 {
 
 #filler svg {
   height: 1.3em;
+}
+
+#filler #shopify-logo:hover {
+  fill: #96bd4e;
+}
+
+#filler #wp-logo:hover {
+  fill: #0073aa;
+}
+
+#filler a {
+  color: #39342D;
+}
+
+#filler a:hover {
+  color: #4c66a8;
+  transition: all 0.1s;
+}
+
+#filler form input:hover {
+  background-color: #fff;
+  border-color: #4c66a8;
+  color: #4c66a8;
+  transition: all 0.22s ease-out;
 }
 
 #filler form input {
