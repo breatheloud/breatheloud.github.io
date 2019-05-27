@@ -1,3 +1,40 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Open Sans Light'), local('OpenSans-Light'),
+       url('../fonts/open-sans-v16-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/open-sans-v16-latin-300.woff') format('woff'), /* Modern Browsers */
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'),
+       url('../fonts/open-sans-v16-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/open-sans-v16-latin-700.woff') format('woff'), /* Modern Browsers */
+}
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local(''),
+       url('../fonts/comfortaa-v22-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/comfortaa-v22-latin-regular.woff') format('woff'), /* Modern Browsers */
+}
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local(''),
+       url('../fonts/comfortaa-v22-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/comfortaa-v22-latin-700.woff') format('woff'), /* Modern Browsers */
+}
+
 body {
   margin: 0;
 }
@@ -32,7 +69,7 @@ h2 {
 
   background-image: url("Images/Tube_Waiting.jpg");
   background-size:cover;
-  background-position: left top;
+  background-position: left center;
 
   height: 50vh;
   width: 100vw;
@@ -66,7 +103,7 @@ p {
 .projects img {
   width: 33.33vw;
   height: 100%;
-  margin-bottom: -4px;
+  margin-bottom: -5px;
 }
 
 .projects img:hover {
@@ -294,15 +331,21 @@ h3 {
   width: 1.75em;
 }
 
-@media screen and (max-width: 400px){
-  .contact-icon {
-    height: 1.25em;
-    width: 1.25em;
+@media screen and (max-width: 500px){
+  #hero-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   h1 {
     text-align: center;
+    text-shadow: 1px 1px 7px white;
   }
   .projects img {
     margin-bottom: -6px;
+  }
+  .contact-icon {
+    height: 1.33em;
+    width: 1.33em;
   }
 }
