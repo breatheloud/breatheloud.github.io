@@ -293,3 +293,16 @@ h3 {
   height: 1.75em;
   width: 1.75em;
 }
+
+@media screen and (max-width: 400px){
+  .contact-icon {
+    height: 1.25em;
+    width: 1.25em;
+  }
+  h1 {
+    text-align: center;
+  }
+  .projects img {
+    margin-bottom: -6px;
+  }
+}
