@@ -275,19 +275,27 @@ h3 {
   color: #39342D;
 }
 
-#filler a:hover {
+#contact-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+}
+
+#contact-box a:hover {
   color: #4c66a8;
   transition: all 0.1s;
 }
 
-#filler form input:hover {
+#contact-box form input:hover {
   background-color: #fff;
   border-color: #4c66a8;
   color: #4c66a8;
   transition: all 0.22s ease-out;
 }
 
-#filler form input {
+#contact-box form input {
   padding: .85em;
   background-color: #4c66a8;
   border: 1px solid #e2d0bb;
@@ -317,6 +325,10 @@ h3 {
 .contact-icon {
   height: 1.75em;
   width: 1.75em;
+}
+
+.contact-icon:hover {
+  opacity: .6;
 }
 
 @media screen and (max-width: 500px){
