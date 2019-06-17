@@ -82,7 +82,7 @@
         	</g>
         </g>
         </svg></a>
-        stores.<br>He is a performance-focused front-end web developer, who implements best-practice UX principles wherever possible.
+        stores.<br/>He is a performance-focused front-end web developer, who implements best-practice UX principles wherever possible.
         </object>
       </p>
     </div>
@@ -90,37 +90,40 @@
     <h2>Projects</h2>
 
     <div class="projects">
-      <a href="https://www.oliverbilou.com" alt="Go to one of my first clients' website"><img src="Images/projects/Oliver_Bilou.jpg" alt=""></a>
-      <a href="https://www.kollectaball.com" alt="Check out the niche tennis ball collection product"><img src="Images/projects/Kollectaball.jpg" alt=""></a>
-      <a href="https://stephvass.com" alt="Go to the Electronic Press Kit of my friend"><img src="Images/projects/Steph_Vass.jpg" alt=""></a>
-      <a href="https://chaykra.com" alt="Visit the beautiful store of chaYkra"><img src="Images/projects/Chaykra.jpg" alt=""></a>
-      <a href="https://aā.com" alt="Go to my first ever client's website"><img src="Images/projects/AĀ.jpg" alt=""></a>
-      <a href="https://ottomanhd.com" alt="Go to a minimalistic Shopify store"><img src="Images/projects/Ottoman_Home_Decor.JPG" alt=""></a>
+      <a class="projectLink" id="oliverBilouBtn" alt="Go to one of my first clients' website"><img src="Images/projects/Oliver_Bilou.jpg" alt=""></a>
+      <a class="projectLink" id="kollectaballBtn" alt="Check out the niche tennis ball collection product"><img src="Images/projects/Kollectaball.jpg" alt=""></a>
+      <a class="projectLink" id="stephVassBtn" alt="Go to the Electronic Press Kit of my friend"><img src="Images/projects/Steph_Vass.jpg" alt=""></a>
+      <a class="projectLink" id="chaykraBtn" alt="Visit the beautiful store of chaYkra"><img src="Images/projects/Chaykra.jpg" alt=""></a>
+      <a class="projectLink" id="aaBtn" alt="Go to my first ever client's website"><img src="Images/projects/AĀ.jpg" alt=""></a>
+      <a class="projectLink" id="ottomanHomeDecorBtn" alt="Go to a minimalistic Shopify store"><img src="Images/projects/Ottoman_Home_Decor.JPG" alt=""></a>
+    </div>
 
-      <div class="modal-box">
-        <input class="modal-state" id="modal" type="checkbox" />
-        <div class="modal">
-          <label class="modal__bg" for="modal"></label>
-          <div class="modal__inner">
-            <label class="modal__close" for="modal"></label>
-            <h3>Positive Experience Guarantee</h3>
-            <p>We understand that buying online can be a daunting task, so we want to put your mind at ease and let you know that there is absolutely zero risk in buying from us.</br>If you do not have a positive experience for any reason, we will do whatever it takes to make sure you are 100% satisfied with your purchase.</p>
-            <p>Have any questions? <a href="/pages/contact-us" alt="Go to contact page" target="_blank"><u>Ask Us</u></a>.</p>
+    <div id="projectModal" class="modal">
+      <div class="modal-content">
+        <div id="modal-header">
+          <span class="close">&times;</span>
+          <h3 id="project-title">Title</h3>
+        </div>
+        <div class="modal-body">
+          <p id="project-snippet">info about project</p>
+          <ul id="project-list">
+          </ul>
+          <div class="flex-modal-button">
+            <button type="submit" name="button" id="project-btn" onclick="window.open('https://google.com')">Go to Site</button>
           </div>
         </div>
       </div>
-
     </div>
 
     <div id="contact-box">
       <p>If you would like to connect or chat about anything (e.g. the wide-reaching implications of The Protestant Work Ethic, or the psychogeographic craftsmanship of Aidan Andrew Dun) please feel free to</p>
       <form action="mailto:kimona@pm.me">
-        <input type="submit" value="Get in Touch" />
+        <input type="submit" value="Get in Touch">
       </form>
     </div>
 
     <div id="footer">
-      <p>Currently in:<br>Lisbon 🇵🇹</p>
+      <p>Currently in: Lisbon 🇵🇹</p>
 
       <div class = "contact">
         <a href = "mailto:kimona@pm.me" title="Send me an email" alt="Font Awesome Paper Plane Icon"><img class="contact-icon" src="Images/Plane_Icon.svg" alt="Paper Plane Icon"></a>

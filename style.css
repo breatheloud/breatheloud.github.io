@@ -1,25 +1,19 @@
 @font-face {
   font-family: 'Open Sans Light';
-  src: url('/fonts/open-sans-300.woff2') format('woff2'), /* Super Modern Browsers */
-       url('/fonts/open-sans-300.woff') format('woff'); /* Modern Browsers */
+  src: url('fonts/open-sans-300.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/open-sans-300.woff') format('woff'); /* Modern Browsers */
   font-display: swap;
 }
 @font-face {
   font-family: 'Open Sans Bold';
-  src: url('/fonts/open-sans-700.woff2') format('woff2'), /* Super Modern Browsers */
-       url('/fonts/open-sans-700.woff') format('woff'); /* Modern Browsers */
+  src: url('fonts/open-sans-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/open-sans-700.woff') format('woff'); /* Modern Browsers */
   font-display: swap;
 }
 @font-face {
   font-family: 'Comfortaa';
-  src: url('/fonts/comfortaa-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('/fonts/comfortaa-regular.woff') format('woff'); /* Modern Browsers */
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Comfortaa Bold';
-  src: url('/fonts/comfortaa-700.woff2') format('woff2'), /* Super Modern Browsers */
-       url('/fonts/comfortaa-700.woff') format('woff'); /* Modern Browsers */
+  src: url('fonts/comfortaa-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/comfortaa-regular.woff') format('woff'); /* Modern Browsers */
   font-display: swap;
 }
 
@@ -44,9 +38,10 @@ h1 {
 
 h2 {
   text-align: left;
-  font-family: 'Comfortaa Bold', sans-serif;
+  font-family: 'Comfortaa', sans-serif;
   color: #39342D;
   margin: 1em;
+  font-weight: 700;
 }
 
 #hero-banner {
@@ -108,134 +103,115 @@ p {
   }
 }
 
+/* The Modal */
 .modal {
-  opacity: 0;
-  visibility: hidden;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
   left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(31,31,31); /* Fallback color */
+  background-color: rgba(31,31,31,0.75); /* Black w/ opacity */
+}
+
+#modal-header {
+  padding: 2px 16px;
+  background-color: #e2d0bb;
+  color: #4c66a8;
+}
+
+#project-title {
+  font-family: 'Open Sans Bold', sans-serif;
+  color: #4c66a8;
   text-align: center;
-  background: rgba(0,0,0, .3);
-  transition: opacity .25s ease;
+  margin: 1.2em;
+  font-size: 1.5rem;
 }
 
-.modal__bg {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  cursor: pointer;
+.modal-body {
+  padding: 2px 16px;
+  font-family: "Open Sans Light", sans-serif;
 }
 
-.modal-state {
-  display: none;
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: 10vh auto 0 auto;
+  padding: 0;
+  width: 66.6%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  animation-name: animatetop;
+  animation-duration: 0.33s;
 }
 
-.modal-state:checked + .modal {
-  opacity: 1;
-  visibility: visible;
-}
-
-.modal-state:checked + .modal .modal__inner {
-  top: 0;
-}
-
-.modal__inner {
-  transition: top .25s ease;
-  position: absolute;
-  top: -20%;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  width: 50%;
-  overflow: auto;
-  background: #f0f0f0;
-  border-radius: 5px;
-  padding: 1em 2em;
-  height: 50%;
-  color: #303030;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.modal__inner h2 {
-  color: white;
-}
-
-.modal__close {
-  position: absolute;
-  right: 1em;
-  top: 1em;
-  width: 1.1em;
-  height: 1.1em;
-  cursor: pointer;
-}
-
-.modal__close:after,
-.modal__close:before {
-  content: '';
-  position: absolute;
-  width: 2px;
-  height: 1.5em;
-  background: #ccc;
-  display: block;
-  transform: rotate(45deg);
-  left: 50%;
-  margin: -3px 0 0 -1px;
-  top: 0;
-}
-
-.modal__close:hover:after,
-.modal__close:hover:before {
-  background: #aaa;
-}
-
-.modal__close:before {
-  transform: rotate(-45deg);
-}
-
-@media screen and (max-width: 768px) {
-
-  .modal__inner {
-    width: 80%;
-    height: 65%;
-    box-sizing: border-box;
+@media screen and (min-width: 600px) and (max-width: 900px){
+  .modal-content {
+    width: 85%;
   }
 }
 
-.modal-btn {
-  cursor: pointer;
-  background: #77b6dd;
-  display: inline-block;
-  padding: .8em 1.9em;
-  color: #000;
-  border: solid #232112 1px;
-  font-size: .8em;
+@media screen and (max-width: 599px){
+  .modal-content {
+    width: 94%;
+  }
+}
+
+#project-snippet{
+  font-family: "Open Sans Bold", sans-serif;
+}
+
+#project-list li {
+  margin: 2vh 7.5vw;
+  font-size: .9rem;
+  font-family: "Open Sans Light", sans-serif;
+}
+
+.flex-modal-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 0 2em 0;
+}
+
+.modal-body button {
+  background-color: #39342D;
+  color: white;
+  border: 0;
+  padding: .9rem 2.75rem;
+  border: 1px solid #fefefe;
+  font-size: .88rem;
+  font-family: "Comfortaa", sans-serif;
+}
+
+.modal-body button:hover {
+  background-color: rgba(226, 208, 187, 0.5);
+  color: #39342D;
+  border: 1px solid #39342D;
+}
+
+/* Add Animation */
+@keyframes animatetop {
+  from {top: -10vh; opacity: 0}
+  to {top: 0; opacity: 1}
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
   font-weight: bold;
 }
 
- .modal-btn:hover,
-.modal-btn:focus {
-  background: #77b6dd;
-  border: solid #77b6dd 1px;
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
-
-.modal-btn:active {
-  background: linear-gradient(to left, #77b6dd 0%, #232112 100%);
-  box-shadow: 0 1px 2px rgba(0,0,0, .2) inset;
-}
-
-.modal-activation {
-  display: flex;
-  justify-content: center;
-}
-
 
 #filler {
   display: flex;
@@ -243,13 +219,6 @@ p {
   justify-content: center;
   align-items: center;
   margin: 0 10vw 0 10vw;
-}
-
-h3 {
-  font-family: 'Comfortaa', sans-serif;
-  color: #39342D;
-  text-align: left;
-  margin: 1em;
 }
 
 .cms-line {
