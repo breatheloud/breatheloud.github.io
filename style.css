@@ -19,54 +19,153 @@
 
 body {
   margin: 0;
+  font-size: 20px;
+}
+.body-container {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
   font-family: 'Comfortaa', sans-serif;
   font-weight: normal;
-  text-shadow: 1px 1px 3px grey;
   color: #000;
-  margin-right: 5vw;
+  font-size: 3em;
+  text-align:left;
+  margin-bottom: 0;
+}
+
+#ipa {
+  margin-top: 0;
+  font-size: .8em;
 }
 
 h2 {
   text-align: left;
   font-family: 'Comfortaa', sans-serif;
   color: #39342D;
-  margin: 1em;
+  margin: 0;
   font-weight: 700;
 }
 
-#hero-banner {
+.splash {
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-between;
-
-  background-image: url("Images/Tube_Waiting.jpg");
-  background-size:cover;
-  background-position: left center;
-
-  height: 50vh;
-  width: 100vw;
+  height: 100vh;
+  background-color: #e2d0bb;
+}
+.splash-box {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 30vw;
+  height: 40vh;
+  background-color: #fff;
+  padding: 7.5vw 6vw;
 }
 
-@media screen and (min-width: 800px){
-  #hero-banner {
-    height: 75vh;
-  }
+.cms-line {
+  font-family: 'Open Sans Light', sans-serif;
+  color: #39342D;
+  text-align: left;
+  line-height: 2;
 }
-@media screen and (min-width: 1080px){
-  #hero-banner {
-    height: 90vh;
-  }
+
+#filler svg {
+  height: 1.1em;
 }
+
+#filler #shopify-logo:hover {
+  fill: #96bd4e;
+  transition: all .3s ease-out;
+}
+
+#filler #wp-logo #Layer_2:hover {
+  fill: #0073aa;
+}
+
+#filler a {
+  color: #39342D;
+}
+
+.pic-and-quote {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+}
+
+.pic-and-quote video {
+  width: 25vw;
+  height: 100%; /* make sure border-radius: 50% runs fine */
+  border-radius: 50%;
+  margin: 5vh 0 0 -17.5vw;
+  z-index: 3;
+}
+
+.pic-and-quote quote {
+  margin-top: 8vh;
+  max-width: 25vw;
+  text-align: center;
+  font-family: "Comfortaa", sans-serif;
+  font-style: italic;
+  font-size: .8em;
+  line-height: 1.75;
+  transition: opacity 2s ease-out; /*opacity only*/
+  transition-delay: 2.75s; /* wait for video to end */
+}
+.pic-and-quote code {
+  background-color: #39342D;
+  color: white;
+  padding: .15em;
+}
+
+.invisible {
+  opacity: 0;
+}
+
+/* Side Bar */
+.splash .floating-side-menu {
+  width: 10vw;
+  background-color: #4c66a8;
+  height: 90vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.vertical-menu-items {
+  height:50vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 0; /* Remove inherited default <ul> styling */
+}
+.vertical-menu-items li {
+  list-style-type: none;
+}
+#day-moon {
+  width:3.5em;
+}
+#night-moon {
+  display:none;
+  width: 100%;
+}
+/* End of Side Bar */
 
 p {
   text-align: center;
   font-family: "Open Sans Light", sans-serif;
   color: #39342D;
-  font-size: 20px;
+}
+
+.projects-title-bar {
+  background-color: #e2d0bb;
+  padding:2rem;
 }
 
 .projects {
@@ -184,11 +283,37 @@ p {
   border: 1px solid #39342D;
 }
 
-/* Add Animation */
+/* Animations */
 @keyframes animatetop {
   from {top: -10vh; opacity: 0}
   to {top: 0; opacity: 1}
 }
+
+.shake {
+  animation: shake 0.4s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(1px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-2px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(2px, 0, 0);
+  }
+}
+/* End of Animations */
 
 /* The Close Button */
 .close {
@@ -203,37 +328,6 @@ p {
   color: black;
   text-decoration: none;
   cursor: pointer;
-}
-
-#filler {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0 10vw 0 10vw;
-}
-
-.cms-line {
-  margin-top: 2em;
-  font-family: 'Open Sans Light', sans-serif;
-  color: #39342D;
-  text-align: center;
-}
-
-#filler svg {
-  height: 1.3em;
-}
-
-#filler #shopify-logo:hover {
-  fill: #96bd4e;
-}
-
-#filler #wp-logo:hover {
-  fill: #0073aa;
-}
-
-#filler a {
-  color: #39342D;
 }
 
 #contact-box {
@@ -293,20 +387,59 @@ p {
 }
 
 @media screen and (max-width: 500px){
-  #hero-banner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  h1 {
-    text-align: center;
-    text-shadow: 1px 1px 7px white;
-  }
   .projects img {
     margin-bottom: -6px;
   }
   .contact-icon {
     height: 1.33em;
     width: 1.33em;
+  }
+  /* fix profile pic styling too & move blue stripe */
+}
+
+@media all and (max-width: 768px){
+  body {
+    font-size: 17px;
+  }
+  h1 {
+    font-size: 2.5em;
+  }
+  .splash {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .splash-box {
+    width: 80vw;
+    height: 60vw;
+    align-items: center;
+    order: 1;
+    padding: 2vw 3vw;
+    margin: 2vh 0vw;
+  }
+  .splash .floating-side-menu {
+    width: 100vw;
+    height: 10vh;
+    order: 3;
+  }
+  .pic-and-quote {
+    order: 2;
+    width: 100vw;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-self: stretch;
+    margin-bottom: 5vh;
+  }
+  .pic-and-quote video {
+    width: 33vw;
+    height: 31vw; /* To keep image round */
+    margin: 0; /* Clear position from desktop */
+    align-self: flex-end; /* So it's below quote */
+  }
+  .pic-and-quote quote {
+    margin: 0;
+    max-width: 50vw;
+    align-self: flex-start; /* So it's above video/img */
   }
 }

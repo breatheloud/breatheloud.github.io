@@ -6,6 +6,7 @@ var projectTitle = document.getElementById('project-title');
 var projectSnippet = document.getElementById('project-snippet');
 var projectBtn = document.getElementById('project-btn');
 var projectList = document.getElementById('project-list');
+var counter = 0;
 
 function createListItem (text) {
   var li = document.createElement('li');
@@ -25,12 +26,12 @@ projectBoard[0].onclick = function(){
   projectHeader.style.backgroundColor = "#D01F46";
   projectTitle.innerHTML = "Oliver Bilou";
   projectTitle.style.color = "#F0F0F0";
-  projectSnippet.innerHTML = "My first re-entry into the world of Shopify.  I was rejuvenated their old website, working alongside the founder and designer.";
+  projectSnippet.innerHTML = "My first re-entry into the world of Shopify.  Working alongside the founder and a designer, we rejuvenated Oliver Bilou's original site.";
   projectBtn.setAttribute("onclick", "window.open('https://oliverbilou.com')");
 
   var arr = [
-    createListItem("By implementing user tests to assist in the decision-making process, we were able to make some good decisions regarding the UX of the site. (i.e. nav bar to hav gradient opacity was the ideal solution as a completely transparent or opaque nav bar was either too jarring or limiting, the sweet spot was somewhere closer to opacity)"),
-    createListItem("Inserting custom built modals, accordions, and making the site flow better (e.g. insert buttons at the bottom of single collection pages to see the rest of the products, while making sure that same all products button was accessible in the menu)"),
+    createListItem("By implementing user tests to assist in the decision-making process, we were able to act on informed decisions regarding the UX of the site"),
+    createListItem("Inserting custom built modals, accordions, and creating a more fluid flow for the users"),
     createListItem("In order to maintain aesthetic consistency across the entire website, I kept colour relationships complementary across the entire site as well as sharp and soft edgings")
   ];
   appendListItems(projectList, arr);
@@ -42,13 +43,13 @@ projectBoard[1].onclick = function(){
   projectHeader.style.backgroundColor = "#5c7393";
   projectTitle.innerHTML = "Kollectaball";
   projectTitle.style.color = "#fff";
-  projectSnippet.innerHTML = "A well-developed niche product, that needed some improvements to its Shopify store. Incuding various cosmetic customisations, I have improved the speed and functionality since working with the guys at Kollectaball.";
+  projectSnippet.innerHTML = "A well-developed niche product, that needed some improvements to its Shopify store. Incuding various cosmetic customisations, I have improved the speed and functionality since working with the Kollectaball team.";
   projectBtn.setAttribute("onclick", "window.open('https://www.kollectaball.com')");
 
   var arr = [
     createListItem("Merged (and managed redirects for) 6 variations of the site into one canonical version"),
-    createListItem("To more than double the site's Lighthouse score: I halved the total load time of the home page; mitigated the amount of network calls, async loading relevant assets, and removed other render-blocking resourecs; forced a FOUT ; deleted unnecessary apps by implementing best practices such as lazy loading, minification, and converting to progressive jpgs I cut down the weight of the site's images dramatically"),
-    createListItem("Creating the geo-location banner, unifying all collections into a single collection page, and simplifying the site, while fixing various visual bugs.  I have had a hand in improving various aspects of the site")
+    createListItem("Almost tripled the site's Lighthouse score: I halved the total load time of the home page; mitigated the amount of network calls, async loading relevant assets, and removed other render-blocking resourecs; forced a FOUT ; deleted unnecessary apps by implementing best practices such as lazy loading, minification, and converting to progressive jps, webp & webm. I cut down the weight of the site's images dramatically"),
+    createListItem("Creating the geo-location banner, unifying all collections into a single collection page, and simplifying the site, while fixing various visual bugs.  I have had a hand in improving a multitude of aspects of the site")
   ];
   appendListItems(projectList, arr);
 }
@@ -59,7 +60,7 @@ projectBoard[2].onclick = function(){
   projectHeader.style.backgroundColor = "#000";
   projectTitle.innerHTML = "Steph Vass EPK";
   projectTitle.style.color = "#d7d7d7";
-  projectSnippet.innerHTML = "This static site was created entirely by me, I designed and developed everything. Initially hosted on Github Pages.";
+  projectSnippet.innerHTML = "This single-page site was created entirely by me, I designed and developed everything. Initially hosted on Github Pages.";
   projectBtn.setAttribute("onclick", "window.open('https://stephvass.com')");
 
   var arr = [
@@ -76,12 +77,12 @@ projectBoard[3].onclick = function(){
   projectTitle.innerHTML = "Chaykra";
   projectTitle.style.color = "#fff";
 
-  projectSnippet.innerHTML = "A well-designed and customised Shopify store, I worked alongside the sister founders and a designer.";
+  projectSnippet.innerHTML = "Improving a well-designed and already customised Shopify store, I worked alongside the sister founders and a designer.";
   projectBtn.setAttribute("onclick", "window.open('https://chaykra.com')");
 
   var arr = [
     createListItem('Unified three localised versions of the site into a single one with a dynamic currency switcher'),
-    createListItem('Implemented blog redesign to spec, took a Sketch design and made customisations to an already customised layout.  Often this involved fixing breaks that cascaded down'),
+    createListItem('Implemented blog redesign to spec on an already customised layout.  Often this involved fixing breaks that cascaded down'),
     createListItem('Various fixes to the UI, as well as implementing new banner images with ideal on-page SEO')
   ];
   appendListItems(projectList, arr);
@@ -93,12 +94,12 @@ projectBoard[4].onclick = function(){
   projectHeader.style.backgroundColor = "#7ca26c";
   projectTitle.innerHTML = "AĀ";
   projectTitle.style.color = "#fff";
-  projectSnippet.innerHTML = "Built using Wordpress, and working alongside the company's founder I'm quite proud of the first site I built from scratch.";
-  projectBtn.setAttribute("onclick", "window.open('https://aā.com')");
+  projectSnippet.innerHTML = "Built using Wordpress, and working alongside the company's founder. I'm rather proud of the first site I built from scratch.";
+  projectBtn.setAttribute("onclick", "window.open('https://aā.com/shipping/ ')");
 
   var arr = [
-    createListItem('Initially hosted on an AWS EC2 instance, I manually installed the first SSL certificate'),
-    createListItem("Although the site's design is pretty basic, I did create some fun UI elements such as the shipping map, which I made by editing an SVG file with CSS")
+    createListItem('Initially hosted on an AWS EC2 instance, I handled most of the necessary back-end considerations'),
+    createListItem("Although the site's design is somewhat basic, some UI elements were rather fun to create: such as the shipping map; done by editing an SVG file with CSS")
   ];
   appendListItems(projectList, arr);
 }
@@ -109,7 +110,7 @@ projectBoard[5].onclick = function(){
   projectHeader.style.backgroundColor = "#557b97";
   projectTitle.innerHTML = "Ottoman Home Decor";
   projectTitle.style.color = "#fff";
-  projectSnippet.innerHTML = "Built and established minimalistic Shopify store that was previously only a profile on a third-party online marketplace.";
+  projectSnippet.innerHTML = "Built and established a basic Shopify store that was previously only a profile on a third-party online marketplace.";
   projectBtn.setAttribute("onclick", "window.open('https://ottomanhd.com')");
 
   var arr = [
@@ -118,7 +119,6 @@ projectBoard[5].onclick = function(){
   ];
   appendListItems(projectList, arr);
 }
-
 
 // Close Modal
 var arr = projectList.children;
@@ -141,3 +141,13 @@ window.onclick = function(event) {
     document.getElementsByClassName('modal')[0].style.display = "none";
   }
 }
+
+
+window.onscroll = function showQuote(){
+  counter ++;
+  if (counter < 2) {
+    document.getElementsByTagName('quote')[0].classList.remove("invisible");
+    document.getElementById('profilePic').classList.add('shake');
+    document.getElementById('profilePic').play();
+  }
+};
