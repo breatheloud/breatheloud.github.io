@@ -141,9 +141,9 @@ window.onclick = function(event) {
     document.getElementsByClassName('modal')[0].style.display = "none";
   }
 }
+document.
 
-
-window.onscroll = function showQuote(){
+window.onload = function showQuote(){
   counter ++;
   if (counter < 2) {
     document.getElementsByTagName('quote')[0].classList.remove("invisible");
