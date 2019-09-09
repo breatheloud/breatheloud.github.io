@@ -141,7 +141,6 @@ window.onclick = function(event) {
     document.getElementsByClassName('modal')[0].style.display = "none";
   }
 }
-document.
 
 window.onload = function showQuote(){
   counter ++;
