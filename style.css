@@ -100,7 +100,7 @@ h2 {
 
 .pic-and-quote video {
   width: 25vw;
-  height: 100%; /* make sure border-radius: 50% runs fine */
+  height: 23.575vw; /* make sure border-radius: 50% runs fine + fix safari bug*/
   border-radius: 50%;
   margin: 5vh 0 0 -17.5vw;
   z-index: 3;
