@@ -21,7 +21,7 @@ function appendListItems (parent, children) {
 }
 
 // Oliver Bilou
-projectBoard[0].onclick = function(){
+projectBoard[1].onclick = function(){
   projectModal.style.display = "block";
   projectHeader.style.backgroundColor = "#D01F46";
   projectTitle.innerHTML = "Oliver Bilou";
@@ -38,7 +38,7 @@ projectBoard[0].onclick = function(){
 }
 
 //Kollectaball
-projectBoard[1].onclick = function(){
+projectBoard[7].onclick = function(){
   projectModal.style.display = "block";
   projectHeader.style.backgroundColor = "#5c7393";
   projectTitle.innerHTML = "Kollectaball";
@@ -55,7 +55,7 @@ projectBoard[1].onclick = function(){
 }
 
 // Steph Vass
-projectBoard[2].onclick = function(){
+projectBoard[3].onclick = function(){
   projectModal.style.display = "block";
   projectHeader.style.backgroundColor = "#000";
   projectTitle.innerHTML = "Steph Vass EPK";
@@ -71,7 +71,7 @@ projectBoard[2].onclick = function(){
 }
 
 // Chaykra
-projectBoard[3].onclick = function(){
+projectBoard[4].onclick = function(){
   projectModal.style.display = "block";
   projectHeader.style.backgroundColor = "#21386b";
   projectTitle.innerHTML = "Chaykra";
@@ -89,7 +89,7 @@ projectBoard[3].onclick = function(){
 }
 
 // AĀ
-projectBoard[4].onclick = function(){
+projectBoard[2].onclick = function(){
   projectModal.style.display = "block";
   projectHeader.style.backgroundColor = "#7ca26c";
   projectTitle.innerHTML = "AĀ";
@@ -105,7 +105,7 @@ projectBoard[4].onclick = function(){
 }
 
 // Ottoman Home Decor
-projectBoard[5].onclick = function(){
+projectBoard[6].onclick = function(){
   projectModal.style.display = "block";
   projectHeader.style.backgroundColor = "#557b97";
   projectTitle.innerHTML = "Ottoman Home Decor";
@@ -116,6 +116,39 @@ projectBoard[5].onclick = function(){
   var arr = [
     createListItem('Assisted with branding and design considerations, making suggestions that will hopefully manifest in a growing direction'),
     createListItem('Using best practice SEO, I created the lightly designed Ottoman Home Decor storefront')
+  ];
+  appendListItems(projectList, arr);
+}
+
+// Sister Jane
+projectBoard[5].onclick = function(){
+  projectModal.style.display = "block";
+  projectHeader.style.backgroundColor = "#fff";
+  projectTitle.innerHTML = "Sister Jane";
+  projectTitle.style.color = "#39342D";
+  projectSnippet.innerHTML = "After creating a minimalistic shipping page, I built a geo-location upselling bar that dynamically changes depending on the user's location and current amount in the cart.";
+  projectBtn.setAttribute("onclick", "window.open('https://sisterjane.com')");
+
+  var arr = [
+    createListItem("Working specifically with Shopify's Shipping Zone REST API, I pulled in data from where Sister Jane ships to, and displayed it in a simple dropdown menu incorporated within a search bar"),
+    createListItem("Initially using the native HTML5 geolocation feature, the user's location was matched to various logical conditions (and the Shipping Zone API) and dispayed in a bar that changes depending on the cart's amount with the intention of more users spending more to qualify for free shipping"),
+    createListItem("Due to the nature of how Shopify hosts its sites, both the above features required a CORS proxy to be set up")
+  ];
+  appendListItems(projectList, arr);
+}
+
+// Frances Loom
+projectBoard[0].onclick = function(){
+  projectModal.style.display = "block";
+  projectHeader.style.backgroundColor = "#faf9f4";
+  projectTitle.innerHTML = "Frances Loom";
+  projectTitle.style.color = "#4a4a4a";
+  projectSnippet.innerHTML = "Bringing several new design ideas to life, I took the rough design wireframes from pencil sketches to fully functional improvements integrated into the aesthetic of the site.";
+  projectBtn.setAttribute("onclick", "window.open('https://francesloom.com')");
+
+  var arr = [
+    createListItem('By inserting static image placeholders on the collections page, and building on already existing customisations within the existing theme layout: I had to account for the dynamically created grid layout crossing over the CSS & Javascript, and programmatically inserted static images that would not break with any number of images that are always being sold. With the help of some basic mathematics, all is well.'),
+    createListItem('I rebuilt the navigation menu, about us page, and added in some new functionality onto the collections page')
   ];
   appendListItems(projectList, arr);
 }
