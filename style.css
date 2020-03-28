@@ -128,7 +128,7 @@ h2 {
   opacity: 0;
 }
 
-/* Side Bar */
+/*--- Side Bar ---*/
 .splash .floating-side-menu {
   width: 10vw;
   background-color: #4c66a8;
@@ -156,7 +156,7 @@ h2 {
   display:none;
   width: 100%;
 }
-/* End of Side Bar */
+/*--- End of Side Bar ---*/
 
 p {
   text-align: center;
@@ -170,17 +170,19 @@ p {
 }
 
 .projects {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 1em;
   max-height: 69vw;
-  background-image: linear-gradient(#7d7d7f, #fff);
+  background-image: linear-gradient(#e2d0bb, #fff);
 }
 
 .projects img {
-  width: 33.33vw;
+  width: 100%;
   height: 100%;
-  margin-bottom: -5px;
+
+  /* margin-bottom: -5px; */
 }
 
 .projects img:hover {
@@ -188,7 +190,7 @@ p {
   transition: all 0.2s ease-out;
 }
 
-/* The Modal */
+/*--- Modal ---*/
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -201,11 +203,9 @@ p {
   background-color: rgb(31,31,31); /* Fallback color */
   background-color: rgba(31,31,31,0.75); /* Black w/ opacity */
 }
-
 #modal-header {
   padding: 2px 16px;
 }
-
 #project-title {
   font-family: 'Open Sans Bold', sans-serif;
   color: #4c66a8;
@@ -213,12 +213,10 @@ p {
   margin: 1.2em;
   font-size: 1.5rem;
 }
-
 .modal-body {
   padding: 2px 16px;
   font-family: "Open Sans Light", sans-serif;
 }
-
 .modal-content {
   position: relative;
   background-color: #fefefe;
@@ -229,24 +227,20 @@ p {
   animation-name: animatetop;
   animation-duration: 0.33s;
 }
-
 #project-snippet{
   font-family: "Open Sans Bold", sans-serif;
 }
-
 #project-list li {
   margin: 2vh 7.5vw;
   font-size: .9rem;
   font-family: "Open Sans Light", sans-serif;
 }
-
 .flex-modal-button {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 1em 0 2em 0;
 }
-
 .modal-body button {
   background-color: #39342D;
   color: white;
@@ -256,60 +250,53 @@ p {
   font-size: .88rem;
   font-family: "Comfortaa", sans-serif;
 }
-
 .modal-body button:hover {
   background-color: rgba(226, 208, 187, 0.5);
   color: #39342D;
   border: 1px solid #39342D;
 }
+/*--- End of Modal ---*/
 
-/* Animations */
+/*--- Animations ---*/
 @keyframes animatetop {
   from {top: -10vh; opacity: 0}
   to {top: 0; opacity: 1}
 }
-
 .shake {
   animation: shake 0.4s cubic-bezier(.36,.07,.19,.97) both;
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
   perspective: 1000px;
 }
-
 @keyframes shake {
   10%, 90% {
     transform: translate3d(-1px, 0, 0);
   }
-
   20%, 80% {
     transform: translate3d(1px, 0, 0);
   }
-
   30%, 50%, 70% {
     transform: translate3d(-2px, 0, 0);
   }
-
   40%, 60% {
     transform: translate3d(2px, 0, 0);
   }
 }
-/* End of Animations */
+/*--- End of Animations ---*/
 
-/* The Close Button */
+/*--- Close Button ---*/
 .close {
   color: #aaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
 }
-
 .close:hover,
 .close:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;
 }
-
 #contact-box {
   display: flex;
   flex-direction: column;
@@ -335,7 +322,8 @@ p {
   font-family: "Open Sans Bold", sans-serif;
   font-size: .85em;
 }
-/* Tooltip */
+/*--- End of Close Button ---*/
+/*--- Tooltip ---*/
 .tooltip {
  position: relative;
  display: inline-block;
@@ -374,7 +362,7 @@ p {
  opacity: 1;
  display: block;
 }
-/* End of Tooltip */
+/*--- End of Tooltip ---*/
 
 #footer {
   display: flex;
@@ -419,20 +407,6 @@ p {
     width: 50vw;
   }
 
-}
-
-@media screen and (max-width: 500px){
-  .projects img {
-    margin-bottom: -6px;
-  }
-  .contact-icon {
-    height: 1.33em;
-    width: 1.33em;
-  }
-  .tooltip .tooltiptext {
-    width: 150px;
-  }
-  /* fix profile pic styling too & move blue stripe */
 }
 
 @media all and (max-width: 768px){
@@ -480,4 +454,32 @@ p {
     max-width: 50vw;
     align-self: flex-start; /* So it's above video/img */
   }
+  .projects {
+    grid-template-columns: 1fr 1fr;
+    max-height: unset;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .projects {
+    grid-template-columns: 1fr;
+    width: 100
+  }
+
+  .projects img {
+    margin-bottom: 1em;
+    width: 100%;
+  }
+
+  .contact-icon {
+    height: 1.33em;
+    width: 1.33em;
+  }
+
+  .tooltip .tooltiptext {
+    width: 150px;
+  }
+
+  /* fix profile pic styling too & move blue stripe */
 }

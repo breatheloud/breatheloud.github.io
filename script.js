@@ -1,4 +1,3 @@
-// TO DO: change header colour
 var projectBoard = document.getElementsByClassName('projectLink');
 var projectModal = document.getElementById('projectModal');
 var projectHeader = document.getElementById('modal-header');
@@ -38,7 +37,7 @@ projectBoard[1].onclick = function(){
 }
 
 //Kollectaball
-projectBoard[7].onclick = function(){
+projectBoard[5].onclick = function(){
   projectModal.style.display = "block";
   projectHeader.style.backgroundColor = "#5c7393";
   projectTitle.innerHTML = "Kollectaball";
@@ -54,24 +53,8 @@ projectBoard[7].onclick = function(){
   appendListItems(projectList, arr);
 }
 
-// Steph Vass
-projectBoard[3].onclick = function(){
-  projectModal.style.display = "block";
-  projectHeader.style.backgroundColor = "#000";
-  projectTitle.innerHTML = "Steph Vass EPK";
-  projectTitle.style.color = "#d7d7d7";
-  projectSnippet.innerHTML = "This single-page site was created entirely by me, I designed and developed everything. Initially hosted on Github Pages.";
-  projectBtn.setAttribute("onclick", "window.open('https://stephvass.com')");
-
-  var arr = [
-    createListItem('Mobile-first, using flexbox, simple yet effective'),
-    createListItem('Workflow using git')
-  ];
-  appendListItems(projectList, arr);
-}
-
 // Chaykra
-projectBoard[4].onclick = function(){
+projectBoard[2].onclick = function(){
   projectModal.style.display = "block";
   projectHeader.style.backgroundColor = "#21386b";
   projectTitle.innerHTML = "Chaykra";
@@ -88,24 +71,8 @@ projectBoard[4].onclick = function(){
   appendListItems(projectList, arr);
 }
 
-// AĀ
-projectBoard[2].onclick = function(){
-  projectModal.style.display = "block";
-  projectHeader.style.backgroundColor = "#7ca26c";
-  projectTitle.innerHTML = "AĀ";
-  projectTitle.style.color = "#fff";
-  projectSnippet.innerHTML = "Built using Wordpress, and working alongside the company's founder. I'm rather proud of the first site I built from scratch.";
-  projectBtn.setAttribute("onclick", "window.open('https://aā.com/shipping/ ')");
-
-  var arr = [
-    createListItem('Initially hosted on an AWS EC2 instance, I handled most of the necessary back-end considerations'),
-    createListItem("Although the site's design is somewhat basic, some UI elements were rather fun to create: such as the shipping map; done by editing an SVG file with CSS")
-  ];
-  appendListItems(projectList, arr);
-}
-
 // Ottoman Home Decor
-projectBoard[6].onclick = function(){
+projectBoard[4].onclick = function(){
   projectModal.style.display = "block";
   projectHeader.style.backgroundColor = "#557b97";
   projectTitle.innerHTML = "Ottoman Home Decor";
@@ -121,7 +88,7 @@ projectBoard[6].onclick = function(){
 }
 
 // Sister Jane
-projectBoard[5].onclick = function(){
+projectBoard[3].onclick = function(){
   projectModal.style.display = "block";
   projectHeader.style.backgroundColor = "#fff";
   projectTitle.innerHTML = "Sister Jane";
@@ -153,22 +120,56 @@ projectBoard[0].onclick = function(){
   appendListItems(projectList, arr);
 }
 
+// AĀ
+/*
+projectBoard[2].onclick = function(){
+  projectModal.style.display = "block";
+  projectHeader.style.backgroundColor = "#7ca26c";
+  projectTitle.innerHTML = "AĀ";
+  projectTitle.style.color = "#fff";
+  projectSnippet.innerHTML = "Built using Wordpress, and working alongside the company's founder. I'm rather proud of the first site I built from scratch.";
+  projectBtn.setAttribute("onclick", "window.open('https://aā.com/shipping/ ')");
+
+  var arr = [
+    createListItem('Initially hosted on an AWS EC2 instance, I handled most of the necessary back-end considerations'),
+    createListItem("Although the site's design is somewhat basic, some UI elements were rather fun to create: such as the shipping map; done by editing an SVG file with CSS")
+  ];
+  appendListItems(projectList, arr);
+}
+*/
+
+// Steph Vass
+/*
+projectBoard[3].onclick = function(){
+  projectModal.style.display = "block";
+  projectHeader.style.backgroundColor = "#000";
+  projectTitle.innerHTML = "Steph Vass EPK";
+  projectTitle.style.color = "#d7d7d7";
+  projectSnippet.innerHTML = "This single-page site was created entirely by me, I designed and developed everything. Initially hosted on Github Pages.";
+  projectBtn.setAttribute("onclick", "window.open('https://stephvass.com')");
+
+  var arr = [
+    createListItem('Mobile-first, using flexbox, simple yet effective'),
+    createListItem('Workflow using git')
+  ];
+  appendListItems(projectList, arr);
+}
+*/
+
 // Close Modal
 var arr = projectList.children;
 var closeWithX = document.getElementsByClassName("close")[0];
 
 closeWithX.onclick = function() {
   for (var i = arr.length ; i > 0 ; i--) {
-    console.log(i + " is being removed");
       projectList.removeChild(arr[0]);
   }
-  document.getElementsByClassName('modal')[0].style.display = "none";
+  document.getElementById('projectModal').style.display = "none";
 }
 
 window.onclick = function(event) {
   if (event.target == projectModal) {
     for (var i = arr.length ; i > 0 ; i--) {
-      console.log(i + " is being removed");
         projectList.removeChild(arr[0]);
     }
     document.getElementsByClassName('modal')[0].style.display = "none";
