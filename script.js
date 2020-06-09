@@ -26,7 +26,10 @@ projectBoard[1].onclick = function(){
   projectTitle.innerHTML = "Oliver Bilou";
   projectTitle.style.color = "#F0F0F0";
   projectSnippet.innerHTML = "My first re-entry into the world of Shopify.  Working alongside the founder and a designer, we rejuvenated Oliver Bilou's original site.";
-  projectBtn.setAttribute("onclick", "window.open('https://oliverbilou.com')");
+  projectBtn.setAttribute(
+    "onclick",
+    "window.open('https://web.archive.org/web/20190105111124/https://www.oliverbilou.com/')"
+  );
 
   var arr = [
     createListItem("By implementing user tests to assist in the decision-making process, we were able to act on informed decisions regarding the UX of the site"),
