@@ -123,42 +123,6 @@ projectBoard[0].onclick = function(){
   appendListItems(projectList, arr);
 }
 
-// AĀ
-/*
-projectBoard[2].onclick = function(){
-  projectModal.style.display = "block";
-  projectHeader.style.backgroundColor = "#7ca26c";
-  projectTitle.innerHTML = "AĀ";
-  projectTitle.style.color = "#fff";
-  projectSnippet.innerHTML = "Built using Wordpress, and working alongside the company's founder. I'm rather proud of the first site I built from scratch.";
-  projectBtn.setAttribute("onclick", "window.open('https://aā.com/shipping/ ')");
-
-  var arr = [
-    createListItem('Initially hosted on an AWS EC2 instance, I handled most of the necessary back-end considerations'),
-    createListItem("Although the site's design is somewhat basic, some UI elements were rather fun to create: such as the shipping map; done by editing an SVG file with CSS")
-  ];
-  appendListItems(projectList, arr);
-}
-*/
-
-// Steph Vass
-/*
-projectBoard[3].onclick = function(){
-  projectModal.style.display = "block";
-  projectHeader.style.backgroundColor = "#000";
-  projectTitle.innerHTML = "Steph Vass EPK";
-  projectTitle.style.color = "#d7d7d7";
-  projectSnippet.innerHTML = "This single-page site was created entirely by me, I designed and developed everything. Initially hosted on Github Pages.";
-  projectBtn.setAttribute("onclick", "window.open('https://stephvass.com')");
-
-  var arr = [
-    createListItem('Mobile-first, using flexbox, simple yet effective'),
-    createListItem('Workflow using git')
-  ];
-  appendListItems(projectList, arr);
-}
-*/
-
 // Close Modal
 var arr = projectList.children;
 var closeWithX = document.getElementsByClassName("close")[0];
