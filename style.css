@@ -433,6 +433,7 @@ p {
     width: 100vw;
     height: 10vh;
     order: 3;
+    visibility: hidden; /* hide until it has items to show */
   }
   .pic-and-quote {
     order: 2;
