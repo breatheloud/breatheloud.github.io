@@ -165,7 +165,9 @@ projectBoard[5].onclick = function () {
 
 // Close Modal
 
-xToClose.addEventListener( 'click', closeModal() );
+xToClose.addEventListener('click', () => {
+  closeModal(); 
+})
 
 
 function closeModal() {
