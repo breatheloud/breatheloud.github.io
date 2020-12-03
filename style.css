@@ -203,7 +203,7 @@ h2 {
 .night-mode-icon {
   height: 10vh;
   margin-top: 3vh;
-  padding-left: 5vh;
+  padding-left: 0;
 
   animation-duration: 0.2s;
   animation-timing-function: ease-out;

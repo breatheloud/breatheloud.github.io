@@ -227,13 +227,13 @@ function fitMoonWithSun() {
 }
 
 function andTheIconsToo() {
-  if (nightMode === true) {
+  if (nightMode === false) {
     fitMoonWithSun();
     nightModeBtn.src = "Images/Moon.svg";
-    nightMode = false;
-  } else if (nightMode === false) {
+    nightMode = true;
+  } else if (nightMode === true) {
     nightModeBtn.style.paddingLeft = "0";
     nightModeBtn.src = "Images/Sun.svg";
-    nightMode = true;
+    nightMode = false;
   }
 }
