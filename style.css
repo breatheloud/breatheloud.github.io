@@ -125,6 +125,8 @@ h2 {
   height: 40vh;
   background-color: var(--secondary-background-color);
   padding: 7.5vw 6vw;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .cms-line {
@@ -197,6 +199,8 @@ h2 {
   flex-flow: column nowrap;
   justify-content: space-between;
   align-items: center;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 /* Night Mode */
@@ -310,6 +314,7 @@ p {
   /* margin: 10vh auto 0 auto; */
   padding: 0;
   width: 66.6%;
+  border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
   animation-name: animateWidth;
   animation-duration: 0.22s;
@@ -428,10 +433,11 @@ p {
 #contact-box form input {
   padding: .85em;
   background-color: var(--secondary-text-color);
-  border: 1px solid var(--primary-background-color);
+  border: 1px solid transparent;
   color: var(--secondary-background-color);
   font-family: "Open Sans Bold", sans-serif;
   font-size: .85em;
+  border-radius: 5px;
 }
 /*--- End of Close Button ---*/
 /*--- Tooltip ---*/
