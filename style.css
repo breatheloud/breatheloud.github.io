@@ -177,11 +177,7 @@ h2 {
   font-size: .8em;
   line-height: 1.75;
   animation-name: fadeIn;
-  animation-duration: 5s;
-  /* transition: opacity 2s ease-out;  */
-  /*opacity only*/
-  /* transition-delay: 2.75s;  */
-  /* wait for video to end */
+  animation-duration: 2s;
 }
 .pic-and-quote code {
   background-color: var(--primary-text-color);
@@ -208,9 +204,10 @@ h2 {
   height: 10vh;
   margin-top: 3vh;
   padding-left: 0;
-
-  animation-duration: 0.2s;
-  animation-timing-function: ease-out;
+  animation-name: fadeIn;
+  animation-duration: 2.2s;
+  /* animation-duration: 0.2s; */
+  animation-timing-function: ease-in;
 }
 .night-mode-icon:hover {
   cursor: pointer;
@@ -278,6 +275,7 @@ p {
   transition: all 0.2s ease-out;
   cursor: pointer;
   transform: scale(1.03);
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
 }
 
 /*--- Modal ---*/
@@ -348,6 +346,7 @@ p {
   border: 1px solid var(--modal-background-color);
   font-size: .88rem;
   font-family: "Comfortaa", sans-serif;
+  border-radius: 3px;
 }
 .modal-body button:hover {
   background-color: var(--primary-background-color);
